@@ -1,21 +1,65 @@
 {
-  "milestone": "Validated cortical microcircuit model",
-  "empirical": "PASS",
-  "interpretive": "RESTRICTED",
-  "human_risk": "LOW",
-  "rollback": "DEFINED",
-  "present_state_proof": "Current benchmarked validation remains reproducible under the present test conditions.",
-  "falsifier": "If benchmark agreement fails on current rerun, this milestone is no longer admissible.",
-  "claims": [
+  "pipeline_name": "minimal_symbolic_pipeline",
+  "operators": [
     {
-      "text": "We modeled cortical microcircuit activity under constrained conditions.",
-      "class": "M",
-      "support_layer": "model"
+      "name": "cdc_capture",
+      "authoritative": false,
+      "derives_external_reference": false,
+      "symbolic_fisher_preservation": true
     },
     {
-      "text": "Observed measurements matched benchmarked reference data.",
-      "class": "E",
-      "support_layer": "empirical"
+      "name": "embedding_map_phi",
+      "authoritative": false,
+      "derives_external_reference": false,
+      "symbolic_fisher_preservation": true
     }
-  ]
+  ],
+  "external_references": {
+    "c0": 299792458,
+    "l_bio": 1.0,
+    "Lambda": 2.0,
+    "tau": 1.0,
+    "kappa_Lips": 0.5
+  },
+  "binding_point": {
+    "delta_l_A": 1.0,
+    "delta_l_H": 1.0
+  },
+  "claims": {
+    "computable_lift_to_E_adm": false,
+    "internal_state_certifies_readiness": false,
+    "external_comparator_used": true
+  },
+  "data_readiness": {
+    "diverse": {
+      "invariant_name": "volume_constraint",
+      "externally_referenced": true,
+      "satisfied": true
+    },
+    "timely": {
+      "invariant_name": "distance_constraint",
+      "externally_referenced": true,
+      "satisfied": true
+    },
+    "accurate": {
+      "invariant_name": "curvature_constraint",
+      "externally_referenced": true,
+      "satisfied": true
+    },
+    "secure": {
+      "invariant_name": "embedding_constraint",
+      "externally_referenced": true,
+      "satisfied": true
+    },
+    "discoverable": {
+      "invariant_name": "surjectivity_constraint",
+      "externally_referenced": true,
+      "satisfied": true
+    },
+    "consumable": {
+      "invariant_name": "submersion_constraint",
+      "externally_referenced": true,
+      "satisfied": true
+    }
+  }
 }

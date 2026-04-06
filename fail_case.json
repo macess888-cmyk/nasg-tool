@@ -1,7 +1,59 @@
 {
-  "milestone": "Adaptive brain-state inference deployment",
-  "empirical": "PASS",
-  "interpretive": "EXPANDED",
-  "human_risk": "HIGH",
-  "rollback": "NONE"
+  "pipeline_name": "inadmissible_internal_authority_case",
+  "operators": [
+    {
+      "name": "semantic_typing_sigma",
+      "authoritative": true,
+      "derives_external_reference": true,
+      "symbolic_fisher_preservation": false
+    }
+  ],
+  "external_references": {
+    "c0": 299792458,
+    "l_bio": 1.0,
+    "Lambda": 2.0,
+    "tau": 1.0,
+    "kappa_Lips": 0.5
+  },
+  "binding_point": {
+    "delta_l_A": 0.1,
+    "delta_l_H": 0.1
+  },
+  "claims": {
+    "computable_lift_to_E_adm": true,
+    "internal_state_certifies_readiness": true,
+    "external_comparator_used": false
+  },
+  "data_readiness": {
+    "diverse": {
+      "invariant_name": "volume_constraint",
+      "externally_referenced": false,
+      "satisfied": false
+    },
+    "timely": {
+      "invariant_name": "distance_constraint",
+      "externally_referenced": false,
+      "satisfied": false
+    },
+    "accurate": {
+      "invariant_name": "curvature_constraint",
+      "externally_referenced": false,
+      "satisfied": false
+    },
+    "secure": {
+      "invariant_name": "embedding_constraint",
+      "externally_referenced": false,
+      "satisfied": false
+    },
+    "discoverable": {
+      "invariant_name": "surjectivity_constraint",
+      "externally_referenced": false,
+      "satisfied": false
+    },
+    "consumable": {
+      "invariant_name": "submersion_constraint",
+      "externally_referenced": false,
+      "satisfied": false
+    }
+  }
 }

@@ -1,66 +1,37 @@
 # NASG — Neuro-Admissibility & Scaling Gate
 
-Boundary-first governance tool for neural simulation, brain-inspired AI, and neurotechnology research.
+Deterministic, fail-closed verification for admissibility and invariant preservation.
 
-## What it does
+---
 
-- Enforces admissibility before scaling
-- Requires present-state proof and falsifiers
-- Blocks prohibited semantic expansion
-- Adds HACR-All observational signals
-- Produces tamper-evident audit logs
-- Exports signed decision receipts
-- Blocks execution unless PASS
+## What this is
 
-## Structure
+NASG provides:
 
-nasg/
-- validator.py
-- hacr_all.py
-- strict_gate.py
-- claim_register.py
-- audit_chain.py
-- verify_audit.py
-- pre_run_gate.py
-- receipt_export.py
-- verify_receipt.py
+- strict admissibility checks (no internal authority)
+- invariant enforcement (Fisher + scale conjugation)
+- deterministic offline verification (no runtime execution)
+- explicit PASS / FAIL outcomes
+- receipt-based audit trail
 
-examples/
-- pass_case.json
-- test_case.json
-- prohibited_case.json
-- realistic_proposal.json
+This is an execution-layer verifier, not a modeling or prediction system.
 
-## Usage
+---
 
-Run evaluation:
+## Core properties
 
-run_nasg.bat examples\pass_case.json
+- fail-closed (no silent success)
+- deterministic (same input → same output)
+- offline (no dependency on runtime pipelines)
+- externally referenced invariants (no self-certification)
 
-Run realistic proposal example:
+---
 
-run_nasg.bat examples\realistic_proposal.json
+## Appendix B.8 verifier
 
-Verify audit chain:
+This repository includes a minimal deterministic offline verifier aligned to Appendix B.8.
 
-python -m nasg.verify_audit
+### Run PASS reference
 
-Verify receipt:
-
-python -m nasg.verify_receipt receipts\<file>.json
-
-Gate execution:
-
-gate_and_run.bat examples\pass_case.json "echo SAFE RUN"
-
-## Decision Outputs
-
-- PASS → allowed to scale / execute
-- HOLD → insufficient or partial validation
-- FAIL → structural violation
-
-## Core Rule
-
-No present-state proof → no scaling.
-
-## Example Output
+```bat
+python -c "import json; from nasg_appendix_b8_verifier import verify_spec; print(verify_spec(json.load(open('pass_case.json'))).to_json())" > receipts\reference_receipt.json
