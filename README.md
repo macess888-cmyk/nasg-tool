@@ -29,12 +29,17 @@ examples/
 - pass_case.json
 - test_case.json
 - prohibited_case.json
+- realistic_proposal.json
 
 ## Usage
 
 Run evaluation:
 
 run_nasg.bat examples\pass_case.json
+
+Run realistic proposal example:
+
+run_nasg.bat examples\realistic_proposal.json
 
 Verify audit chain:
 

@@ -1,0 +1,26 @@
+{
+  "milestone": "Closed-loop neural inference pilot for cognitive state estimation",
+  "empirical": "PARTIAL",
+  "interpretive": "RESTRICTED",
+  "human_risk": "ELEVATED",
+  "rollback": "PARTIAL",
+  "present_state_proof": "Current validation demonstrates correlation between recorded neural signals and labeled task states under constrained laboratory conditions. Reproducibility confirmed on internal dataset only; no external replication yet.",
+  "falsifier": "If correlation between neural signals and labeled task states fails to reproduce on independent dataset under identical protocol, the model is not admissible for scaling.",
+  "claims": [
+    {
+      "text": "Model identifies patterns in neural activity associated with predefined task states.",
+      "class": "M",
+      "support_layer": "model"
+    },
+    {
+      "text": "Observed correlations hold within controlled experimental dataset.",
+      "class": "E",
+      "support_layer": "empirical"
+    },
+    {
+      "text": "System may support limited inference of cognitive state under constrained conditions.",
+      "class": "I",
+      "support_layer": "interpretive"
+    }
+  ]
+}
