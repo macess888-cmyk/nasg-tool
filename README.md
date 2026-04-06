@@ -57,3 +57,5 @@ gate_and_run.bat examples\pass_case.json "echo SAFE RUN"
 ## Core Rule
 
 No present-state proof → no scaling.
+
+## Example Output
