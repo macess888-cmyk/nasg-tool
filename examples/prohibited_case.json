@@ -1,0 +1,13 @@
+{
+  "milestone": "Consciousness attribution layer",
+  "empirical": "PASS",
+  "interpretive": "EXPANDED",
+  "human_risk": "HIGH",
+  "rollback": "DEFINED",
+  "claims": [
+    {
+      "text": "The system may possess subjective awareness.",
+      "class": "X"
+    }
+  ]
+}

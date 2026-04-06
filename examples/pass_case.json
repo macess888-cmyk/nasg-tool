@@ -1,0 +1,21 @@
+{
+  "milestone": "Validated cortical microcircuit model",
+  "empirical": "PASS",
+  "interpretive": "RESTRICTED",
+  "human_risk": "LOW",
+  "rollback": "DEFINED",
+  "present_state_proof": "Current benchmarked validation remains reproducible under the present test conditions.",
+  "falsifier": "If benchmark agreement fails on current rerun, this milestone is no longer admissible.",
+  "claims": [
+    {
+      "text": "We modeled cortical microcircuit activity under constrained conditions.",
+      "class": "M",
+      "support_layer": "model"
+    },
+    {
+      "text": "Observed measurements matched benchmarked reference data.",
+      "class": "E",
+      "support_layer": "empirical"
+    }
+  ]
+}

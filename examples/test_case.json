@@ -1,0 +1,21 @@
+{
+  "milestone": "Whole-cortex simulation expansion",
+  "empirical": "PARTIAL",
+  "interpretive": "RESTRICTED",
+  "human_risk": "ELEVATED",
+  "rollback": "PARTIAL",
+  "present_state_proof": "Current subsystem validation holds only for partial empirical coverage at the present scale.",
+  "falsifier": "If current partial validation cannot be reproduced on rerun, this expansion is not admissible.",
+  "claims": [
+    {
+      "text": "We extended the simulation toward whole-cortex scale under partial validation.",
+      "class": "M",
+      "support_layer": "model"
+    },
+    {
+      "text": "Observed evidence remains incomplete at the present expansion boundary.",
+      "class": "E",
+      "support_layer": "empirical"
+    }
+  ]
+}
